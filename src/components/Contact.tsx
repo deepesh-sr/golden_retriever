@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
+import { Mail, ArrowUp } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Button } from "./ui/button";
 
 export const Contact = () => {
@@ -23,7 +24,7 @@ export const Contact = () => {
             rel="noopener noreferrer"
             className="border-2 border-white/10 bg-white/5 p-6 rounded-lg hover:border-white/30 hover:bg-white/10 transition-all group"
           >
-            <Github className="w-8 h-8 mb-4 text-white/60 group-hover:text-white transition-colors" />
+            <SiGithub className="w-8 h-8 mb-4 text-white/60 group-hover:text-white transition-colors" />
             <h3 className="text-lg font-semibold mb-2">GitHub</h3>
             <p className="text-white/60 text-sm">@deepesh-sr</p>
           </a>
@@ -34,7 +35,7 @@ export const Contact = () => {
             rel="noopener noreferrer"
             className="border-2 border-white/10 bg-white/5 p-6 rounded-lg hover:border-white/30 hover:bg-white/10 transition-all group"
           >
-            <Linkedin className="w-8 h-8 mb-4 text-white/60 group-hover:text-white transition-colors" />
+            <SiLinkedin className="w-8 h-8 mb-4 text-white/60 group-hover:text-white transition-colors" />
             <h3 className="text-lg font-semibold mb-2">LinkedIn</h3>
             <p className="text-white/60 text-sm">deepesh-sr</p>
           </a>

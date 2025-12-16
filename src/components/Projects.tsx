@@ -1,4 +1,5 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 import { Button } from "./ui/button";
 
 export const Projects = () => {
@@ -122,7 +123,7 @@ export const Projects = () => {
                     rel="noopener noreferrer"
                   >
                     <Button variant="outline" size="sm">
-                      <Github className="w-4 h-4" />
+                      <SiGithub className="w-4 h-4" />
                       Code
                     </Button>
                   </a>
@@ -152,7 +153,7 @@ export const Projects = () => {
             rel="noopener noreferrer"
           >
             <Button variant="outline" size="lg">
-              <Github className="w-5 h-5" />
+              <SiGithub className="w-5 h-5" />
               View More on GitHub
             </Button>
           </a>

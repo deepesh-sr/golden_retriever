@@ -1,4 +1,5 @@
-import { ExternalLink, Github, Palette } from "lucide-react";
+import { ExternalLink, Palette } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 import { Button } from "./ui/button";
 
 export const FrontendDesigns = () => {
@@ -82,7 +83,7 @@ export const FrontendDesigns = () => {
                     rel="noopener noreferrer"
                   >
                     <Button variant="outline" size="sm">
-                      <Github className="w-4 h-4" />
+                      <SiGithub className="w-4 h-4" />
                       Code
                     </Button>
                   </a>
