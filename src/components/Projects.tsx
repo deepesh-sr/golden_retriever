@@ -4,25 +4,7 @@ import { Button } from "./ui/button";
 
 export const Projects = () => {
   const projects = [
-    {
-      title: "min_axum_tracing_setup",
-      description:
-        "A starter template for setting up Axum with structured logging and tracing, ideal for backend services requiring observability and performance.",
-      tags: ["Rust", "Axum", "Tracing", "Backend"],
-      highlights: ["Rust async backend", "Tracing + logging for scalable servers"],
-      github: "https://github.com/deepesh-sr/min_axum_tracing_setup",
-      demo: null,
-    },
-    {
-      title: "make_link_shortyy",
-      description:
-        "A fast and efficient URL shortener built entirely in Rust, emphasizing performance, minimalism, and safety.",
-      tags: ["Rust", "Web", "Backend", "CLI"],
-      highlights: ["Rust-native web utility", "Strong safety and speed"],
-      github: "https://github.com/deepesh-sr/make_link_shortyy",
-      demo: null,
-    },
-    {
+     {
       title: "accel-MagicRoulette",
       description:
         "A Solana on-chain roulette game integrating MagicBlock VRF, showcasing blockchain gaming and verifiable random functions.",
@@ -62,6 +44,25 @@ export const Projects = () => {
       github: "https://github.com/deepesh-sr/Q3_25_Builder",
       demo: null,
     },
+    {
+      title: "min_axum_tracing_setup",
+      description:
+        "A starter template for setting up Axum with structured logging and tracing, ideal for backend services requiring observability and performance.",
+      tags: ["Rust", "Axum", "Tracing", "Backend"],
+      highlights: ["Rust async backend", "Tracing + logging for scalable servers"],
+      github: "https://github.com/deepesh-sr/min_axum_tracing_setup",
+      demo: null,
+    },
+    {
+      title: "make_link_shortyy",
+      description:
+        "A fast and efficient URL shortener built entirely in Rust, emphasizing performance, minimalism, and safety.",
+      tags: ["Rust", "Web", "Backend", "CLI"],
+      highlights: ["Rust-native web utility", "Strong safety and speed"],
+      github: "https://github.com/deepesh-sr/make_link_shortyy",
+      demo: null,
+    },
+   
   ];
 
   return (
