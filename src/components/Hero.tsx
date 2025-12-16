@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { SiGithub, SiX, SiLinkedin } from "react-icons/si";
 
 export const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -89,7 +90,16 @@ export const Hero = () => {
             className="p-3 border-2 border-white/20 hover:border-white/40 hover:bg-white/5 transition-all rounded-lg"
             aria-label="GitHub"
           >
-            <Github className="w-5 h-5" />
+            <SiGithub className="w-5 h-5" />
+          </a>
+          <a
+            href="https://x.com/0xdeepeshW3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 border-2 border-white/20 hover:border-white/40 hover:bg-white/5 transition-all rounded-lg"
+            aria-label="X (Twitter)"
+          >
+            <SiX className="w-5 h-5" />
           </a>
           <a
             href="https://linkedin.com/in/deepesh-sr"
@@ -98,7 +108,7 @@ export const Hero = () => {
             className="p-3 border-2 border-white/20 hover:border-white/40 hover:bg-white/5 transition-all rounded-lg"
             aria-label="LinkedIn"
           >
-            <Linkedin className="w-5 h-5" />
+            <SiLinkedin className="w-5 h-5" />
           </a>
           <a
             href="mailto:rathoredeepeshsingh@gmail.com"
