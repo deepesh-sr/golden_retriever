@@ -1,5 +1,5 @@
 import { Mail, ArrowUp } from "lucide-react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 import { Button } from "./ui/button";
 
 export const Contact = () => {
@@ -17,7 +17,7 @@ export const Contact = () => {
         </div>
 
         {/* Contact Methods */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           <a
             href="https://github.com/deepesh-sr"
             target="_blank"
@@ -27,6 +27,17 @@ export const Contact = () => {
             <SiGithub className="w-8 h-8 mb-4 text-white/60 group-hover:text-white transition-colors" />
             <h3 className="text-lg font-semibold mb-2">GitHub</h3>
             <p className="text-white/60 text-sm">@deepesh-sr</p>
+          </a>
+
+          <a
+            href="https://x.com/deepesh_sr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-white/10 bg-white/5 p-6 rounded-lg hover:border-white/30 hover:bg-white/10 transition-all group"
+          >
+            <SiX className="w-8 h-8 mb-4 text-white/60 group-hover:text-white transition-colors" />
+            <h3 className="text-lg font-semibold mb-2">Twitter</h3>
+            <p className="text-white/60 text-sm">0xdeepeshW3</p>
           </a>
 
           <a
