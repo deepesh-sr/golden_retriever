@@ -5,6 +5,13 @@ import { Button } from "./ui/button";
 export const FrontendDesigns = () => {
   const designs = [
     {
+      title: "Sketostory",
+      description:"Immersive visual design for a art company, modern professional design showcasing unique GSAP animations.",
+      tags: ["TypeScript","React + Vite + ShadCn", "GSAP"],
+      github: "https://github.com/deepesh-sr/artmania",
+      demo: "https://sketchostory.vercel.app",
+    },
+    {
       title: "Martians",
       description:
         "A creative and visually striking frontend project showcasing modern UI design principles with engaging animations and interactive elements. Features responsive layouts and smooth user interactions.",
