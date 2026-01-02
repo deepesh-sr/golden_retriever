@@ -4,7 +4,20 @@ import { Button } from "./ui/button";
 
 export const Projects = () => {
   const projects = [
-     {
+    {
+      title: "Live Attendance System",
+      description:
+        "A real-time attendance tracking backend system leveraging WebSocket technology for instant updates. Built with modern backend practices for scalable, low-latency attendance management.",
+      tags: ["WebSocket", "Backend", "Real-time", "Node.js"],
+      highlights: [
+        "Real-time WebSocket communication",
+        "Live attendance tracking",
+        "Scalable backend architecture",
+      ],
+      github: "https://github.com/deepesh-sr/live_attendance_system",
+      demo: null,
+    },
+    {
       title: "accel-MagicRoulette",
       description:
         "A Solana on-chain roulette game integrating MagicBlock VRF, showcasing blockchain gaming and verifiable random functions.",
