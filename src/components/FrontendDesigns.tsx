@@ -5,6 +5,13 @@ import { Button } from "./ui/button";
 export const FrontendDesigns = () => {
   const designs = [
     {
+      title: "Frexus",
+      description: "A modern logistics and transport company website featuring comprehensive service tracking, responsive design, and an intuitive user interface for global shipping solutions.",
+      tags: ["React", "Tailwind CSS", "UI/UX", "Logistics"],
+      github: "https://github.com/deepesh-sr/frexus",
+      demo: "https://frexus.vercel.app",
+    },
+    {
       title: "Sketostory",
       description:"Immersive visual design for a art company, modern professional design showcasing unique GSAP animations.",
       tags: ["TypeScript","React + Vite + ShadCn", "GSAP"],
