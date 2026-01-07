@@ -1,6 +1,7 @@
 import { Navigation } from "./components/Navigation";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
+import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { FrontendDesigns } from "./components/FrontendDesigns";
 import { Contact } from "./components/Contact";
@@ -11,6 +12,7 @@ function App() {
       <Navigation />
       <Hero />
       <About />
+      <Experience />
       <Projects />
       <FrontendDesigns />
       <Contact />
