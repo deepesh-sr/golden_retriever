@@ -16,6 +16,7 @@ export const Navigation = () => {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Designs", href: "#designs" },
     { name: "Contact", href: "#contact" },

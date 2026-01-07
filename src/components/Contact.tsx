@@ -90,6 +90,12 @@ export const Contact = () => {
               About
             </a>
             <a
+              href="#experience"
+              className="text-white/60 hover:text-white transition-colors text-sm"
+            >
+              Experience
+            </a>
+            <a
               href="#projects"
               className="text-white/60 hover:text-white transition-colors text-sm"
             >
