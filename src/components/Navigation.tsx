@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
+import { Button } from "./ui/button";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -70,6 +71,18 @@ export const Navigation = () => {
                   {link.name}
                 </a>
               ))}
+              <a
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                download="Deepesh_Singh_Rathore_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2"
+              >
+                <Button variant="outline" size="sm">
+                  <Download className="w-4 h-4" />
+                  Resume
+                </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -105,6 +118,18 @@ export const Navigation = () => {
                 {link.name}
               </a>
             ))}
+            <a
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
+              download="Deepesh_Singh_Rathore_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Button variant="outline" size="lg">
+                <Download className="w-5 h-5" />
+                Download Resume
+              </Button>
+            </a>
           </div>
         </div>
       )}
