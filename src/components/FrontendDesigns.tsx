@@ -5,6 +5,13 @@ import { Button } from "./ui/button";
 export const FrontendDesigns = () => {
   const designs = [
     {
+      title: "Textura",
+      description: "A visually high-end, artistic frontend showcase exploring modern textures, typography, and layout designs. Features interactive elements and a premium aesthetic.",
+      tags: ["React", "Tailwind CSS", "UI/UX", "Artistic"],
+      github: "https://github.com/deepesh-sr/textura",
+      demo: "https://textura-sigma.vercel.app/",
+    },
+    {
       title: "Frexus",
       description: "A modern logistics and transport company website featuring comprehensive service tracking, responsive design, and an intuitive user interface for global shipping solutions.",
       tags: ["React", "Tailwind CSS", "UI/UX", "Logistics"],

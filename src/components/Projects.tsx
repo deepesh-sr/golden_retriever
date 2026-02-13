@@ -5,6 +5,19 @@ import { Button } from "./ui/button";
 export const Projects = () => {
   const projects = [
     {
+      title: "FinBoard",
+      description:
+        "A comprehensive financial dashboard and management system providing real-time insights and tracking capabilities. Built with a focus on data visualization and clean financial workflows.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Dashboard"],
+      highlights: [
+        "Real-time financial tracking",
+        "Interactive data visualizations",
+        "Secure and scalable architecture",
+      ],
+      github: "https://github.com/deepesh-sr/FinBoard",
+      demo: null,
+    },
+    {
       title: "Live Attendance System",
       description:
         "A real-time attendance tracking backend system leveraging WebSocket technology for instant updates. Built with modern backend practices for scalable, low-latency attendance management.",
