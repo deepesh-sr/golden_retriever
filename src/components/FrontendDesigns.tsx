@@ -6,9 +6,9 @@ export const FrontendDesigns = () => {
   const designs = [
     {
       title: "Textura",
-      description: "A visually high-end, artistic frontend showcase exploring modern textures, typography, and layout designs. Features interactive elements and a premium aesthetic.",
-      tags: ["React", "Tailwind CSS", "UI/UX", "Artistic"],
-      github: "https://github.com/deepesh-sr/textura",
+      description: "Intelligent Digital Strategy CMS. A modern, responsive Content Management System and blog platform designed for content creators. Features high-end animations, a dedicated insights archive, and a robust admin dashboard for real-time management.",
+      tags: ["React", "CMS", "Tailwind CSS", "Animations"],
+      github: "https://github.com/deepesh-sr/Textura",
       demo: "https://textura-sigma.vercel.app/",
     },
     {

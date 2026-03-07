@@ -5,6 +5,19 @@ import { Button } from "./ui/button";
 export const Projects = () => {
   const projects = [
     {
+      title: "LendBNB",
+      description:
+        "A decentralized lending protocol on BNB Chain featuring an autonomous liquidation bot, real-time analytics dashboard, and flash loan support. Developed for the BNB Chain Hackathon 2026.",
+      tags: ["BNB Chain", "Solidity", "DeFi", "Web3"],
+      highlights: [
+        "Autonomous liquidation bot",
+        "Real-time DeFi analytics",
+        "Flash loan integration",
+      ],
+      github: "https://github.com/deepesh-sr/LendBNB",
+      demo: "https://lendchain-bnb.vercel.app/",
+    },
+    {
       title: "FinBoard",
       description:
         "A comprehensive financial dashboard and management system providing real-time insights and tracking capabilities. Built with a focus on data visualization and clean financial workflows.",
