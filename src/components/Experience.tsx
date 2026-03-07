@@ -3,9 +3,17 @@ import { Briefcase } from "lucide-react";
 export const Experience = () => {
   const experiences = [
     {
+      company: "o8m_labs",
+      role: "Full Stack Developer",
+      period: "Feb 2026 - Present",
+      description:
+        "Building and scaling decentralized applications and high-performance backend infrastructure. Focused on creating seamless developer experiences and robust full-stack solutions.",
+      skills: ["Full Stack Development", "Solana", "Rust", "TypeScript", "React"],
+    },
+    {
       company: "BSH Technologies",
       role: "Full Stack Developer",
-      period: "Present",
+      period: "2024 - Feb 2026",
       description:
         "Developing scalable backend systems and responsive frontend applications. leveraging modern technologies to build efficient solutions.",
       skills: ["Full Stack Development", "React", "Node.js", "Backend Systems"],
