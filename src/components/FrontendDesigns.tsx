@@ -5,6 +5,20 @@ import { Button } from "./ui/button";
 export const FrontendDesigns = () => {
   const designs = [
     {
+      title: "Honeybee",
+      description: "A premium UI inspiration website providing comprehensive color systems, font pairings, and reusable React components optimized for developers and AI agents.",
+      tags: ["React", "UI/UX", "Design Systems", "Components"],
+      github: "https://github.com/deepesh-sr/honeybee",
+      demo: "https://honeybee-seven.vercel.app/",
+    },
+    {
+      title: "BrainMark",
+      description: "A professional digital hive for your discoveries. A sophisticated bookmarking and knowledge management tool designed for organized digital exploration.",
+      tags: ["React", "Next.js", "Knowledge Management", "UI/UX"],
+      github: "https://github.com/deepesh-sr/BrainMark",
+      demo: "https://brain-mark-one.vercel.app/",
+    },
+    {
       title: "Textura",
       description: "Intelligent Digital Strategy CMS. A modern, responsive Content Management System and blog platform designed for content creators. Features high-end animations, a dedicated insights archive, and a robust admin dashboard for real-time management.",
       tags: ["React", "CMS", "Tailwind CSS", "Animations"],

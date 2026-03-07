@@ -5,6 +5,32 @@ import { Button } from "./ui/button";
 export const Projects = () => {
   const projects = [
     {
+      title: "Honeybee",
+      description:
+        "A premium UI inspiration platform and design system provider. Features automated color palette generation, font pairings, and a library of reusable React components designed for scalability and modern aesthetics.",
+      tags: ["React", "Design System", "UI/UX", "Vite"],
+      highlights: [
+        "Automated design system generation",
+        "Reusable high-performance components",
+        "Developer and AI-agent friendly architecture",
+      ],
+      github: "https://github.com/deepesh-sr/honeybee",
+      demo: "https://honeybee-seven.vercel.app/",
+    },
+    {
+      title: "BrainMark",
+      description:
+        "A professional-grade knowledge management and bookmarking tool. Provides a sophisticated 'digital hive' for organizing web discoveries with an emphasis on speed, organization, and a clean user experience.",
+      tags: ["Next.js", "TypeScript", "Knowledge Management"],
+      highlights: [
+        "Advanced bookmark organization",
+        "High-performance search and tagging",
+        "Modern, minimal workflow design",
+      ],
+      github: "https://github.com/deepesh-sr/BrainMark",
+      demo: "https://brain-mark-one.vercel.app/",
+    },
+    {
       title: "LendBNB",
       description:
         "A decentralized lending protocol on BNB Chain featuring an autonomous liquidation bot, real-time analytics dashboard, and flash loan support. Developed for the BNB Chain Hackathon 2026.",
