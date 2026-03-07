@@ -7,220 +7,126 @@ export const Projects = () => {
     {
       title: "Honeybee",
       description:
-        "A premium UI inspiration platform and design system provider. Features automated color palette generation, font pairings, and a library of reusable React components designed for scalability and modern aesthetics.",
-      tags: ["React", "Design System", "UI/UX", "Vite"],
-      highlights: [
-        "Automated design system generation",
-        "Reusable high-performance components",
-        "Developer and AI-agent friendly architecture",
-      ],
+        "Premium UI inspiration platform with automated color palette generation, font pairings, and reusable React components.",
+      tags: ["React", "Design System", "Vite"],
       github: "https://github.com/deepesh-sr/honeybee",
       demo: "https://honeybee-seven.vercel.app/",
     },
     {
-      title: "BrainMark",
-      description:
-        "A professional-grade knowledge management and bookmarking tool. Provides a sophisticated 'digital hive' for organizing web discoveries with an emphasis on speed, organization, and a clean user experience.",
-      tags: ["Next.js", "TypeScript", "Knowledge Management"],
-      highlights: [
-        "Advanced bookmark organization",
-        "High-performance search and tagging",
-        "Modern, minimal workflow design",
-      ],
-      github: "https://github.com/deepesh-sr/BrainMark",
-      demo: "https://brain-mark-one.vercel.app/",
-    },
-    {
       title: "LendBNB",
       description:
-        "A decentralized lending protocol on BNB Chain featuring an autonomous liquidation bot, real-time analytics dashboard, and flash loan support. Developed for the BNB Chain Hackathon 2026.",
-      tags: ["BNB Chain", "Solidity", "DeFi", "Web3"],
-      highlights: [
-        "Autonomous liquidation bot",
-        "Real-time DeFi analytics",
-        "Flash loan integration",
-      ],
+        "Decentralized lending protocol on BNB Chain with autonomous liquidation bot, real-time analytics, and flash loan support.",
+      tags: ["BNB Chain", "Solidity", "DeFi"],
       github: "https://github.com/deepesh-sr/LendBNB",
       demo: "https://lendchain-bnb.vercel.app/",
     },
     {
-      title: "FinBoard",
+      title: "BrainMark",
       description:
-        "A comprehensive financial dashboard and management system providing real-time insights and tracking capabilities. Built with a focus on data visualization and clean financial workflows.",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Dashboard"],
-      highlights: [
-        "Real-time financial tracking",
-        "Interactive data visualizations",
-        "Secure and scalable architecture",
-      ],
-      github: "https://github.com/deepesh-sr/FinBoard",
-      demo: null,
-    },
-    {
-      title: "Live Attendance System",
-      description:
-        "A real-time attendance tracking backend system leveraging WebSocket technology for instant updates. Built with modern backend practices for scalable, low-latency attendance management.",
-      tags: ["WebSocket", "Backend", "Real-time", "Node.js"],
-      highlights: [
-        "Real-time WebSocket communication",
-        "Live attendance tracking",
-        "Scalable backend architecture",
-      ],
-      github: "https://github.com/deepesh-sr/live_attendance_system",
-      demo: null,
+        "Knowledge management and bookmarking tool with advanced organization, fast search, and a clean workflow.",
+      tags: ["Next.js", "TypeScript"],
+      github: "https://github.com/deepesh-sr/BrainMark",
+      demo: "https://brain-mark-one.vercel.app/",
     },
     {
       title: "accel-MagicRoulette",
       description:
-        "A Solana on-chain roulette game integrating MagicBlock VRF, showcasing blockchain gaming and verifiable random functions.",
-      tags: ["Solana", "TypeScript", "Gaming", "VRF"],
-      highlights: [
-        "Solana on-chain interaction",
-        "Chain randomness via VRF",
-        "TypeScript client layer",
-      ],
+        "Solana on-chain roulette game integrating MagicBlock VRF for verifiable randomness in blockchain gaming.",
+      tags: ["Solana", "TypeScript", "VRF"],
       github: "https://github.com/deepesh-sr/accel-MagicRoulette",
       demo: null,
     },
     {
-      title: "MINI_GREP",
+      title: "FinBoard",
       description:
-        "A compact grep-like utility implemented in Rust, demonstrating systems programming expertise and text processing.",
-      tags: ["Rust", "CLI", "Systems Programming"],
-      highlights: ["CLI tool built with Rust", "Text processing performance"],
-      github: "https://github.com/deepesh-sr/MINI_GREP",
-      demo: null,
-    },
-    {
-      title: "Trustplay",
-      description:
-        "TypeScript-based web3 experience and Solana ecosystem contribution reflecting engagement with dev tooling and community.",
-      tags: ["TypeScript", "Solana", "Web3"],
-      highlights: ["Solana ecosystem participation", "Frontend + blockchain integration"],
-      github: "https://github.com/deepesh-sr/Trustplay",
-      demo: null,
-    },
-    {
-      title: "Q3_25_Builder",
-      description:
-        "Developer tooling and Solana ecosystem project showcasing full-stack blockchain development.",
-      tags: ["TypeScript", "Solana", "Developer Tools"],
-      highlights: ["Community challenge participation", "Web3 integration"],
-      github: "https://github.com/deepesh-sr/Q3_25_Builder",
+        "Financial dashboard with real-time tracking, interactive data visualizations, and secure architecture.",
+      tags: ["React", "TypeScript", "Dashboard"],
+      github: "https://github.com/deepesh-sr/FinBoard",
       demo: null,
     },
     {
       title: "min_axum_tracing_setup",
       description:
-        "A starter template for setting up Axum with structured logging and tracing, ideal for backend services requiring observability and performance.",
-      tags: ["Rust", "Axum", "Tracing", "Backend"],
-      highlights: ["Rust async backend", "Tracing + logging for scalable servers"],
+        "Starter template for Axum with structured logging and tracing for observable, performant Rust backends.",
+      tags: ["Rust", "Axum", "Backend"],
       github: "https://github.com/deepesh-sr/min_axum_tracing_setup",
       demo: null,
     },
-    {
-      title: "make_link_shortyy",
-      description:
-        "A fast and efficient URL shortener built entirely in Rust, emphasizing performance, minimalism, and safety.",
-      tags: ["Rust", "Web", "Backend", "CLI"],
-      highlights: ["Rust-native web utility", "Strong safety and speed"],
-      github: "https://github.com/deepesh-sr/make_link_shortyy",
-      demo: null,
-    },
-   
   ];
 
   return (
-    <section id="projects" className="min-h-screen py-20 px-6">
-      <div className="max-w-6xl mx-auto space-y-12">
-        {/* Header */}
-        <div className="space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">Featured Projects</h2>
-          <p className="text-lg text-white/60 max-w-3xl">
-            A selection of projects showcasing expertise in Rust systems,
-            Solana blockchain development, and full-stack web applications.
+    <section id="projects" className="py-24 px-6">
+      <div className="max-w-3xl mx-auto space-y-10">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-bold">Projects</h2>
+          <p className="text-sm text-white/40">
+            Rust systems, Solana blockchain, and full-stack web applications.
           </p>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="space-y-4">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="border-2 border-white/10 bg-white/5 p-6 rounded-lg hover:border-white/20 transition-all group"
+              className="border border-white/8 bg-white/2 p-5 rounded-lg hover:border-white/15 transition-all group"
             >
-              {/* Title */}
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-white/80 transition-colors">
-                {project.title}
-              </h3>
+              <div className="flex items-start justify-between gap-4 mb-2">
+                <h3 className="text-base font-semibold group-hover:text-white/90 transition-colors">
+                  {project.title}
+                </h3>
+                <div className="flex gap-2 shrink-0">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/30 hover:text-white/70 transition-colors"
+                      aria-label="GitHub"
+                    >
+                      <SiGithub className="w-4 h-4" />
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/30 hover:text-white/70 transition-colors"
+                      aria-label="Live demo"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
+              </div>
 
-              {/* Description */}
-              <p className="text-white/60 text-sm leading-relaxed mb-4">
+              <p className="text-white/40 text-sm leading-relaxed mb-3">
                 {project.description}
               </p>
 
-              {/* Highlights */}
-              <ul className="space-y-1 mb-4">
-                {project.highlights.map((highlight) => (
-                  <li key={highlight} className="text-white/50 text-xs">
-                    → {highlight}
-                  </li>
-                ))}
-              </ul>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-1.5">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2 py-1 bg-white/10 border border-white/20 rounded"
+                    className="text-[11px] px-2 py-0.5 bg-white/5 border border-white/8 rounded-full text-white/40"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-
-              {/* Links */}
-              <div className="flex gap-3">
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline" size="sm">
-                      <SiGithub className="w-4 h-4" />
-                      Code
-                    </Button>
-                  </a>
-                )}
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline" size="sm">
-                      <ExternalLink className="w-4 h-4" />
-                      Demo
-                    </Button>
-                  </a>
-                )}
-              </div>
             </div>
           ))}
         </div>
 
-        {/* More Projects Link */}
-        <div className="text-center pt-8">
+        <div className="text-center">
           <a
             href="https://github.com/deepesh-sr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="lg">
-              <SiGithub className="w-5 h-5" />
-              View More on GitHub
+            <Button variant="outline" size="sm">
+              <SiGithub className="w-4 h-4" />
+              More on GitHub
             </Button>
           </a>
         </div>

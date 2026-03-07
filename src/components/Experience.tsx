@@ -1,5 +1,3 @@
-import { Briefcase } from "lucide-react";
-
 export const Experience = () => {
   const experiences = [
     {
@@ -7,49 +5,47 @@ export const Experience = () => {
       role: "Full Stack Developer",
       period: "Feb 2026 - Present",
       description:
-        "Building and scaling decentralized applications and high-performance backend infrastructure. Focused on creating seamless developer experiences and robust full-stack solutions.",
-      skills: ["Full Stack Development", "Solana", "Rust", "TypeScript", "React"],
+        "Building decentralized applications and high-performance backend infrastructure. Creating seamless developer experiences with Solana, Rust, and React.",
+      skills: ["Solana", "Rust", "TypeScript", "React"],
     },
     {
       company: "BSH Technologies",
       role: "Full Stack Developer",
       period: "2024 - Feb 2026",
       description:
-        "Developing scalable backend systems and responsive frontend applications. leveraging modern technologies to build efficient solutions.",
-      skills: ["Full Stack Development", "React", "Node.js", "Backend Systems"],
+        "Developed scalable backend systems and responsive frontend applications using modern web technologies.",
+      skills: ["React", "Node.js", "TypeScript", "Backend Systems"],
     },
   ];
 
   return (
-    <section id="experience" className="min-h-screen py-20 px-6">
-      <div className="max-w-6xl mx-auto space-y-12">
-        {/* Header */}
-        <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <Briefcase className="w-8 h-8 text-white/60" />
-            <h2 className="text-4xl md:text-5xl font-bold">Experience</h2>
-          </div>
-          <p className="text-lg text-white/60 max-w-3xl">
-            My professional journey and career milestones.
-          </p>
-        </div>
+    <section id="experience" className="py-24 px-6">
+      <div className="max-w-3xl mx-auto space-y-10">
+        <h2 className="text-3xl font-bold">Experience</h2>
 
-        {/* Experience List */}
         <div className="space-y-8">
           {experiences.map((exp) => (
             <div
               key={exp.company}
-              className="border-l-2 border-white/20 pl-8 relative before:absolute before:w-4 before:h-4 before:bg-white before:rounded-full before:-left-2.25 before:top-0"
+              className="border-l border-white/10 pl-6 space-y-2"
             >
-              <h3 className="text-2xl font-bold">{exp.role}</h3>
-              <div className="text-xl text-white/80 mb-2">{exp.company}</div>
-              <div className="text-sm text-white/50 mb-4">{exp.period}</div>
-              <p className="text-white/60 max-w-2xl mb-4">{exp.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                <div>
+                  <h3 className="text-lg font-semibold">{exp.role}</h3>
+                  <span className="text-white/50 text-sm">{exp.company}</span>
+                </div>
+                <span className="text-xs text-white/30 shrink-0">
+                  {exp.period}
+                </span>
+              </div>
+              <p className="text-white/40 text-sm leading-relaxed">
+                {exp.description}
+              </p>
+              <div className="flex flex-wrap gap-1.5 pt-1">
                 {exp.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-xs px-2 py-1 bg-white/10 border border-white/20 rounded"
+                    className="text-[11px] px-2 py-0.5 bg-white/5 border border-white/10 rounded-full text-white/50"
                   >
                     {skill}
                   </span>

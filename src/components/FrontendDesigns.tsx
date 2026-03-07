@@ -1,142 +1,95 @@
-import { ExternalLink, Palette } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
-import { Button } from "./ui/button";
 
 export const FrontendDesigns = () => {
   const designs = [
     {
-      title: "Honeybee",
-      description: "A premium UI inspiration website providing comprehensive color systems, font pairings, and reusable React components optimized for developers and AI agents.",
-      tags: ["React", "UI/UX", "Design Systems", "Components"],
-      github: "https://github.com/deepesh-sr/honeybee",
-      demo: "https://honeybee-seven.vercel.app/",
-    },
-    {
-      title: "BrainMark",
-      description: "A professional digital hive for your discoveries. A sophisticated bookmarking and knowledge management tool designed for organized digital exploration.",
-      tags: ["React", "Next.js", "Knowledge Management", "UI/UX"],
-      github: "https://github.com/deepesh-sr/BrainMark",
-      demo: "https://brain-mark-one.vercel.app/",
-    },
-    {
       title: "Textura",
-      description: "Intelligent Digital Strategy CMS. A modern, responsive Content Management System and blog platform designed for content creators. Features high-end animations, a dedicated insights archive, and a robust admin dashboard for real-time management.",
-      tags: ["React", "CMS", "Tailwind CSS", "Animations"],
+      description:
+        "Intelligent CMS with high-end animations, insights archive, and admin dashboard.",
+      tags: ["React", "CMS", "Animations"],
       github: "https://github.com/deepesh-sr/Textura",
       demo: "https://textura-sigma.vercel.app/",
     },
     {
       title: "Frexus",
-      description: "A modern logistics and transport company website featuring comprehensive service tracking, responsive design, and an intuitive user interface for global shipping solutions.",
-      tags: ["React", "Tailwind CSS", "UI/UX", "Logistics"],
+      description:
+        "Modern logistics company site with service tracking and responsive design.",
+      tags: ["React", "Tailwind CSS", "UI/UX"],
       github: "https://github.com/deepesh-sr/frexus",
       demo: "https://frexus.vercel.app",
     },
     {
       title: "Sketostory",
-      description:"Immersive visual design for a art company, modern professional design showcasing unique GSAP animations.",
-      tags: ["TypeScript","React + Vite + ShadCn", "GSAP"],
+      description:
+        "Immersive art company site with GSAP animations and visual storytelling.",
+      tags: ["TypeScript", "React", "GSAP"],
       github: "https://github.com/deepesh-sr/artmania",
       demo: "https://sketchostory.vercel.app",
     },
     {
       title: "Martians",
       description:
-        "A creative and visually striking frontend project showcasing modern UI design principles with engaging animations and interactive elements. Features responsive layouts and smooth user interactions.",
-      tags: ["HTML", "CSS", "JavaScript", "Animation"],
+        "Creative frontend showcase with engaging animations and interactive elements.",
+      tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/deepesh-sr/martians",
       demo: "https://deepesh-sr.github.io/martians/",
-    },
-    {
-      title: "Animatrixx",
-      description:
-        "An animation-focused frontend showcase demonstrating advanced CSS animations, transitions, and modern web design techniques. Explores creative motion design and interactive visual experiences.",
-      tags: ["CSS Animations", "JavaScript", "UI/UX", "Design"],
-      github: "https://github.com/deepesh-sr/animatrixx",
-      demo: "https://deepesh-sr.github.io/animatrixx/",
-    },
-    {
-      title: "Fourth Dimension",
-      description:
-        "An experimental frontend project exploring creative coding and dimensional design concepts. Pushes the boundaries of web-based visual experiences with innovative interaction patterns.",
-      tags: ["Creative Coding", "JavaScript", "WebGL", "Experimental"],
-      github: "https://github.com/deepesh-sr/fourth-dimension",
-      demo: null,
     },
   ];
 
   return (
-    <section id="designs" className="min-h-screen py-20 px-6 bg-black/30">
-      <div className="max-w-6xl mx-auto space-y-12">
-        {/* Header */}
-        <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <Palette className="w-8 h-8 text-white/60" />
-            <h2 className="text-4xl md:text-5xl font-bold">Frontend Designs</h2>
-          </div>
-          <p className="text-lg text-white/60 max-w-3xl">
-            Creative UI experiments and interactive frontend showcases exploring
-            modern design principles, animations, and user experiences.
+    <section id="designs" className="py-24 px-6">
+      <div className="max-w-3xl mx-auto space-y-10">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-bold">Frontend Designs</h2>
+          <p className="text-sm text-white/40">
+            UI experiments and interactive showcases.
           </p>
         </div>
 
-        {/* Designs Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {designs.map((design) => (
-            <div
+            <a
               key={design.title}
-              className="border-2 border-white/10 bg-white/5 p-6 rounded-lg hover:border-white/20 transition-all group"
+              href={design.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white/8 bg-white/2 p-5 rounded-lg hover:border-white/15 transition-all group block"
             >
-              {/* Title */}
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-white/80 transition-colors">
-                {design.title}
-              </h3>
+              <div className="flex items-start justify-between gap-3 mb-2">
+                <h3 className="text-base font-semibold group-hover:text-white/90 transition-colors">
+                  {design.title}
+                </h3>
+                <div className="flex gap-2 shrink-0">
+                  <span
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      window.open(design.github, "_blank");
+                    }}
+                    className="text-white/30 hover:text-white/70 transition-colors cursor-pointer"
+                  >
+                    <SiGithub className="w-3.5 h-3.5" />
+                  </span>
+                  <ExternalLink className="w-3.5 h-3.5 text-white/30 group-hover:text-white/70 transition-colors" />
+                </div>
+              </div>
 
-              {/* Description */}
-              <p className="text-white/60 text-sm leading-relaxed mb-4">
+              <p className="text-white/40 text-xs leading-relaxed mb-3">
                 {design.description}
               </p>
 
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-1.5">
                 {design.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2 py-1 bg-white/10 border border-white/20 rounded"
+                    className="text-[10px] px-2 py-0.5 bg-white/5 border border-white/8 rounded-full text-white/40"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
-
-              {/* Links */}
-              <div className="flex gap-3">
-                {design.github && (
-                  <a
-                    href={design.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="outline" size="sm">
-                      <SiGithub className="w-4 h-4" />
-                      Code
-                    </Button>
-                  </a>
-                )}
-                {design.demo && (
-                  <a
-                    href={design.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button variant="default" size="sm">
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
-                    </Button>
-                  </a>
-                )}
-              </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

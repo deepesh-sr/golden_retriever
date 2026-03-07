@@ -8,13 +8,18 @@ import { Contact } from "./components/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#141414] text-white">
+    <div className="min-h-screen bg-[#0a0a0a] text-white">
       <Navigation />
       <Hero />
+      <div className="max-w-3xl mx-auto px-6"><hr className="border-white/5" /></div>
       <About />
+      <div className="max-w-3xl mx-auto px-6"><hr className="border-white/5" /></div>
       <Experience />
+      <div className="max-w-3xl mx-auto px-6"><hr className="border-white/5" /></div>
       <Projects />
+      <div className="max-w-3xl mx-auto px-6"><hr className="border-white/5" /></div>
       <FrontendDesigns />
+      <div className="max-w-3xl mx-auto px-6"><hr className="border-white/5" /></div>
       <Contact />
     </div>
   );

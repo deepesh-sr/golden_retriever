@@ -1,63 +1,57 @@
 import { Button } from "./ui/button";
-import { ArrowDown, Mail } from "lucide-react";
-import { useEffect, useRef } from "react";
+import { Mail } from "lucide-react";
 import { SiGithub, SiX, SiLinkedin } from "react-icons/si";
 
 export const Hero = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.6; // Slow down to 60% speed
-    }
-  }, []);
-
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-6 py-20 pt-24 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center px-6 py-20 pt-24"
     >
-      {/* Background Video */}
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-20"
-        style={{ filter: "blur(2px)" }}
-      >
-        <source
-          src="https://cdn.pixabay.com/video/2020/04/21/36784-412873690_large.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <div className="max-w-3xl w-full space-y-10">
+        {/* Status */}
+        <div className="flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="text-sm text-white/50 tracking-wide">
+            Available for opportunities
+          </span>
+        </div>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black/80" />
-
-      <div className="max-w-4xl w-full space-y-8 relative z-10">
         {/* Name and Title */}
-        <div className="space-y-4">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
+        <div className="space-y-3">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
             Deepesh Singh
-            <br />
-            <span className="text-white/60">Rathore</span>
+            <span className="text-white/40"> Rathore</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/70 max-w-2xl">
-            Solana • Rust • Full-Stack Engineer
+          <p className="text-lg md:text-xl text-white/50 font-medium">
+            Full-Stack Engineer — Solana, Rust, TypeScript
           </p>
         </div>
 
-        {/* Bio */}
-        <p className="text-base md:text-lg text-white/60 max-w-2xl leading-relaxed">
-          Building high-performance, scalable systems — from Rust services to
-          Solana smart experiences — and delivering seamless full-stack
-          solutions using modern web and blockchain technologies.
+        {/* One-liner */}
+        <p className="text-base text-white/40 max-w-xl leading-relaxed">
+          I build high-performance systems and polished web experiences.
+          From Rust backends to Solana programs to React frontends.
         </p>
 
+        {/* Quick Stats */}
+        <div className="flex gap-8 text-sm">
+          <div>
+            <span className="text-white font-semibold">2+</span>
+            <span className="text-white/40 ml-1">years exp</span>
+          </div>
+          <div>
+            <span className="text-white font-semibold">10+</span>
+            <span className="text-white/40 ml-1">projects shipped</span>
+          </div>
+          <div>
+            <span className="text-white font-semibold">Rust</span>
+            <span className="text-white/40 ml-1">+ Solana + React</span>
+          </div>
+        </div>
+
         {/* CTA Buttons */}
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-3 pt-2">
           <Button
             size="lg"
             onClick={() =>
@@ -66,7 +60,7 @@ export const Hero = () => {
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            View Projects
+            View Work
           </Button>
           <Button
             variant="outline"
@@ -77,51 +71,46 @@ export const Hero = () => {
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            Get in Touch
+            Contact Me
           </Button>
         </div>
 
         {/* Social Links */}
-        <div className="flex gap-4 pt-4">
+        <div className="flex gap-3 pt-2">
           <a
             href="https://github.com/deepesh-sr"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 border-2 border-white/20 hover:border-white/40 hover:bg-white/5 transition-all rounded-lg"
+            className="p-2.5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all rounded-lg"
             aria-label="GitHub"
           >
-            <SiGithub className="w-5 h-5" />
+            <SiGithub className="w-4 h-4 text-white/60" />
           </a>
           <a
             href="https://x.com/0xdeepeshW3"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 border-2 border-white/20 hover:border-white/40 hover:bg-white/5 transition-all rounded-lg"
+            className="p-2.5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all rounded-lg"
             aria-label="X (Twitter)"
           >
-            <SiX className="w-5 h-5" />
+            <SiX className="w-4 h-4 text-white/60" />
           </a>
           <a
             href="https://linkedin.com/in/deepesh-sr"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 border-2 border-white/20 hover:border-white/40 hover:bg-white/5 transition-all rounded-lg"
+            className="p-2.5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all rounded-lg"
             aria-label="LinkedIn"
           >
-            <SiLinkedin className="w-5 h-5" />
+            <SiLinkedin className="w-4 h-4 text-white/60" />
           </a>
           <a
             href="mailto:rathoredeepeshsingh@gmail.com"
-            className="p-3 border-2 border-white/20 hover:border-white/40 hover:bg-white/5 transition-all rounded-lg"
+            className="p-2.5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all rounded-lg"
             aria-label="Email"
           >
-            <Mail className="w-5 h-5" />
+            <Mail className="w-4 h-4 text-white/60" />
           </a>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-6 h-6 text-white/40" />
         </div>
       </div>
     </section>
