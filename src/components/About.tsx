@@ -22,9 +22,9 @@ export const About = () => {
         <div className="space-y-4 text-white/50 text-[15px] leading-relaxed">
           <p>
             I'm a full-stack engineer focused on{" "}
-            <span className="text-white/90">Rust</span>,{" "}
-            <span className="text-white/90">Solana blockchain</span>, and{" "}
-            <span className="text-white/90">modern web development</span>.
+            <span className="text-[#e23636]">Rust</span>,{" "}
+            <span className="text-[#e23636]">Solana blockchain</span>, and{" "}
+            <span className="text-[#e23636]">modern web development</span>.
             I build systems that are fast, reliable, and well-crafted.
           </p>
           <p>
@@ -36,14 +36,14 @@ export const About = () => {
 
         {/* Skills */}
         <div className="space-y-3">
-          <h3 className="text-xs uppercase tracking-widest text-white/30 font-medium">
+          <h3 className="text-xs uppercase tracking-widest text-[#e23636]/50 font-medium">
             Tech Stack
           </h3>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill) => (
               <span
                 key={skill}
-                className="text-xs px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-white/60"
+                className="text-xs px-3 py-1.5 bg-[#e23636]/5 border border-[#e23636]/15 rounded-full text-white/60"
               >
                 {skill}
               </span>

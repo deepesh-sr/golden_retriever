@@ -34,7 +34,7 @@ export const Navigation = () => {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#141414]/90 backdrop-blur-md border-b border-white/5"
+            ? "bg-[#0a0a12]/90 backdrop-blur-md border-b border-[#e23636]/5"
             : "bg-transparent"
         }`}
       >
@@ -66,7 +66,7 @@ export const Navigation = () => {
                     e.preventDefault();
                     handleNavClick(link.href);
                   }}
-                  className="text-xs text-white/40 hover:text-white/80 transition-colors tracking-wide uppercase"
+                  className="text-xs text-white/40 hover:text-[#e23636] transition-colors tracking-wide uppercase"
                 >
                   {link.name}
                 </a>
@@ -102,7 +102,7 @@ export const Navigation = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-[#141414]/98 backdrop-blur-lg md:hidden">
+        <div className="fixed inset-0 z-40 bg-[#0a0a12]/98 backdrop-blur-lg md:hidden">
           <div className="flex flex-col items-center justify-center h-full gap-6">
             {navLinks.map((link) => (
               <a

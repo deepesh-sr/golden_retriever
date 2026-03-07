@@ -27,7 +27,7 @@ export const Contact = () => {
               href="https://github.com/deepesh-sr"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all rounded-lg"
+              className="p-2.5 border border-white/10 hover:border-[#e23636]/30 hover:bg-[#e23636]/5 transition-all rounded-lg"
               aria-label="GitHub"
             >
               <SiGithub className="w-4 h-4 text-white/50" />
@@ -36,7 +36,7 @@ export const Contact = () => {
               href="https://x.com/0xdeepeshW3"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all rounded-lg"
+              className="p-2.5 border border-white/10 hover:border-[#e23636]/30 hover:bg-[#e23636]/5 transition-all rounded-lg"
               aria-label="X"
             >
               <SiX className="w-4 h-4 text-white/50" />
@@ -45,7 +45,7 @@ export const Contact = () => {
               href="https://linkedin.com/in/deepesh-sr"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all rounded-lg"
+              className="p-2.5 border border-white/10 hover:border-[#e23636]/30 hover:bg-[#e23636]/5 transition-all rounded-lg"
               aria-label="LinkedIn"
             >
               <SiLinkedin className="w-4 h-4 text-white/50" />

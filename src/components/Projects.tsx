@@ -68,7 +68,7 @@ export const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="border border-white/8 bg-white/2 p-5 rounded-lg hover:border-white/15 transition-all group"
+              className="border border-white/8 bg-white/2 p-5 rounded-lg hover:border-[#e23636]/20 transition-all group"
             >
               <div className="flex items-start justify-between gap-4 mb-2">
                 <h3 className="text-base font-semibold group-hover:text-white/90 transition-colors">
@@ -80,7 +80,7 @@ export const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white/30 hover:text-white/70 transition-colors"
+                      className="text-white/30 hover:text-[#e23636] transition-colors"
                       aria-label="GitHub"
                     >
                       <SiGithub className="w-4 h-4" />
@@ -91,7 +91,7 @@ export const Projects = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white/30 hover:text-white/70 transition-colors"
+                      className="text-white/30 hover:text-[#1a3a8f] transition-colors"
                       aria-label="Live demo"
                     >
                       <ExternalLink className="w-4 h-4" />

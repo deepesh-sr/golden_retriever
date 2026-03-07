@@ -27,7 +27,7 @@ export const Experience = () => {
           {experiences.map((exp) => (
             <div
               key={exp.company}
-              className="border-l border-white/10 pl-6 space-y-2"
+              className="border-l-2 border-[#e23636]/30 pl-6 space-y-2"
             >
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
                 <div>
@@ -45,7 +45,7 @@ export const Experience = () => {
                 {exp.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-[11px] px-2 py-0.5 bg-white/5 border border-white/10 rounded-full text-white/50"
+                    className="text-[11px] px-2 py-0.5 bg-[#1a3a8f]/10 border border-[#1a3a8f]/20 rounded-full text-white/50"
                   >
                     {skill}
                   </span>

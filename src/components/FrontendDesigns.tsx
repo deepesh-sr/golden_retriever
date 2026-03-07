@@ -54,7 +54,7 @@ export const FrontendDesigns = () => {
               href={design.demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white/8 bg-white/2 p-5 rounded-lg hover:border-white/15 transition-all group block"
+              className="border border-white/8 bg-white/2 p-5 rounded-lg hover:border-[#e23636]/20 transition-all group block"
             >
               <div className="flex items-start justify-between gap-3 mb-2">
                 <h3 className="text-base font-semibold group-hover:text-white/90 transition-colors">
